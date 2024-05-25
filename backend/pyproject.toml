@@ -6,8 +6,8 @@ authors = ["Alexander Semenov <alexander.semenov@tum.de>"]
 readme = "README.md"
 packages = [{include = "src"}]
 
-[tool.poetry.dependencies]
-python = "^3.9"
+[tool.poe2try.dependencies]
+python = ">=3.8"
 flask = "^2.3.2"
 pytest = "^7.4.0"
 gunicorn = "^20.1.0"
