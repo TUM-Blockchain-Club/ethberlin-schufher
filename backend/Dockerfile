@@ -47,6 +47,6 @@ USER rquser
 # Set the command to run your application. gunicorn is a WSGI HTTP server for Python web applications.
 # 0.0.0.0 -> means it will listen to all IPv4 addresses, including localhost on the host machine. 
 # Setting here 127.0.0.1 would mean only accessible to container itself, which makes no sense since we want to access from outside of container.
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "ethberlin_schufher_flask.app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "src.app:app"]
 
 # run this image: docker run -p 8000:8000 <image-name>
