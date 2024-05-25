@@ -10,6 +10,7 @@
       <div class="menu-items">
         <a href="#" class="menu-link">PRODUCTS</a>
         <a href="#" class="menu-link">CONTACT</a>
+        <a href="#" class="menu-link" @click.prevent="handleApiTestClick">{{ apiTestLinkText }}</a>
       </div>
       <div class="buttons-right">
         <v-btn class="normal-button" style="border-radius: 50px;">Sign In</v-btn>
@@ -19,6 +20,43 @@
   </v-app>
 </template>
 
+
+
+
+<script>
+export default {
+  data() {
+    return {
+      apiTestLinkText: 'API TEST',
+      defaultApiTestLinkText: 'API TEST'
+    }
+  },
+  methods: {
+    async testApiCall() {
+      try {
+        // Make the API call
+        const response = await fetch('http://localhost:8042/api/v1/')
+        const data = await response.json()
+        
+        // Update the link text
+        this.apiTestLinkText = data.response
+        
+        // Reset the link text after 5 seconds
+        setTimeout(() => {
+          this.apiTestLinkText = this.defaultApiTestLinkText
+        }, 5000)
+      } catch (error) {
+        console.error(error)
+      }
+    },
+    handleApiTestClick() {
+      this.testApiCall()
+    }
+  }
+}
+
+
+</script>
 <style scoped>
 .app-bar {
   display: flex;
@@ -138,3 +176,4 @@
   background-color: transparent;
 }
 </style>
+
