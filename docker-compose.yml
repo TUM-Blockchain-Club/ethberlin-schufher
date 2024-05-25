@@ -1,0 +1,30 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: ./vue
+      dockerfile: Dockerfile
+    container_name: schufher-frontend
+    depends_on:
+      - backend
+    ports:
+      - 8888:80
+    networks:
+      - customnetwork
+    env_file:
+      - .env
+
+  backend:
+    build:
+      context:  ./backend
+      dockerfile: Dockerfile
+    container_name: schufher-backend
+    ports:
+      - 8042:8000
+    networks:
+      - customnetwork
+    env_file:
+      - .env
+
+networks:
+  customnetwork:
