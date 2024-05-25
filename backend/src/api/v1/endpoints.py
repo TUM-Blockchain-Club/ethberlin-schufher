@@ -8,7 +8,7 @@ from flask import Flask, jsonify, request
 #from flask_jwt_extended import create_access_token, jwt_required
 
 
-from ethberlin_schufher_flask.utils import example
+from src.utils import example
 
 log = logging.getLogger("endpoints-logger")
 

@@ -2,8 +2,8 @@ from flask import Flask
 from flask_cors import CORS
 from flask_jwt_extended import JWTManager
 import os
-from ethberlin_schufher_flask.api.v1.endpoints import v1_blueprint
-from ethberlin_schufher_flask.utils.logger import Logger
+from src.api.v1.endpoints import v1_blueprint
+from src.utils.logger import Logger
 
 # Init flask app
 app = Flask(__name__)
