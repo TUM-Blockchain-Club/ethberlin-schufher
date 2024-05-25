@@ -2,7 +2,7 @@ version: '3'
 services:
   frontend:
     build:
-      context: ./ethberlin-schufher-vue
+      context: ./vue
       dockerfile: Dockerfile
     container_name: schufher-frontend
     depends_on:
@@ -16,7 +16,7 @@ services:
 
   backend:
     build:
-      context:  ./ethberlin-schufher-flask
+      context:  ./backend
       dockerfile: Dockerfile
     container_name: schufher-backend
     ports:

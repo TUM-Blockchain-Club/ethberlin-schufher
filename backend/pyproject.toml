@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "ethberlin-schufher-flask"
+name = "backend"
 version = "0.1.0"
 description = "Backend of SchuFHEr"
 authors = ["Alexander Semenov <alexander.semenov@tum.de>"]
 readme = "README.md"
-packages = [{include = "etherberlin_schufher_flask"}]
+packages = [{include = "backend"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -18,7 +18,7 @@ flask-jwt-extended = "^4.6.0"
 
 [tool.pytest.ini_options]
 minversion = "7.4.0"
-pythonpath = ["etherberlin_schufher_flask"]
+pythonpath = ["backend"]
 testpaths = ["tests"]
 console_output_style =  "progress"
 addopts = """\

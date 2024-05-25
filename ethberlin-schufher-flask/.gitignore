@@ -1,6 +1,0 @@
-# ignore cache
-__pycache__
-.pytest_cache
-# ignore venv since generated automatically
-/.venv
-
