@@ -1,3 +1,13 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
 @import './fonts/fonts.css';
 
 :root {
@@ -10,61 +20,17 @@
   --color-light-blue: #00d4ff;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+body, html, #app {
+  background-color: #222831;
+  color: white;
+  height: 100%;
   margin: 0;
-  font-weight: normal;
+  padding: 0;
+  font-family: Roboto, "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
 }
 
-/*-------------------------------------------------------------------------------------------------------- */
-body {
-  background-color: #EEEEEE;
-}
-
-body, 
-p,
-input,
-textarea {
-  font-size: 14px;
-  color: rgba(0, 0, 0, .87);
-  font-weight: 300;
-  font-family: Roboto, RobotoFallback, "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
-}
-
-h1 {
-  font-size: 3em; /* 3 times the size of body */
-  font-weight: 400;
-  font-family: Roboto, RobotoFallback, "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
-  margin-top: 2vh;
-  margin-bottom: 4vh;
-}
-
-h2 {
-  font-size: 2em;
-  font-weight: 400;
-  font-family: Roboto, RobotoFallback, "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
-  margin-top: 2vh;
-  margin-bottom: 4vh;
-}
-
-h3 {
-  font-weight: 400;
-  font-size: 1.5em;
-  font-family: Roboto, RobotoFallback, "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
-  margin-top: 1vh;
-  margin-bottom: 2vh;
-}
-
-h4 {
-  font-weight: 400;
-  font-size: 1.2em;
-  font-family: Roboto, RobotoFallback, "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
-  margin-top: 1vh;
-  margin-bottom: 2vh;
-}
-
-a {
-  color: #03a9f4;
+h1, h2, h3, h4, p, a, input, textarea {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
 }
