@@ -1,0 +1,70 @@
+@import './fonts/fonts.css';
+
+:root {
+  --color-primary: #EEEEEE;
+  --color-dark-blue: #031BC7;
+  --color-grey: #757575;
+  --color-grey-green: #507387;
+  --color-grey-blue: #015E99;
+  --color-orange: #F0AC00;
+  --color-light-blue: #00d4ff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+/*-------------------------------------------------------------------------------------------------------- */
+body {
+  background-color: #EEEEEE;
+}
+
+body, 
+p,
+input,
+textarea {
+  font-size: 14px;
+  color: rgba(0, 0, 0, .87);
+  font-weight: 300;
+  font-family: Roboto, RobotoFallback, "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 3em; /* 3 times the size of body */
+  font-weight: 400;
+  font-family: Roboto, RobotoFallback, "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 400;
+  font-family: Roboto, RobotoFallback, "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.5em;
+  font-family: Roboto, RobotoFallback, "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.2em;
+  font-family: Roboto, RobotoFallback, "Noto Kufi Arabic", Helvetica, Arial, sans-serif;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+
+a {
+  color: #03a9f4;
+}
