@@ -165,34 +165,54 @@ export default {
                 this.step--;
             }
         },
-        async submitForm() {
+        async fetchScore() {
+            const fallbackScore = 81;  // for demo purposes only (no prod)
             try {
-                const responseScore = await fetch('https://de1c-35-187-154-238.ngrok-free.app/get_score/3', {
+                const response = await fetch('https://de1c-35-187-154-238.ngrok-free.app/get_score/3', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
                         'ngrok-skip-browser-warning': '42'
                     },
                 });
-                const responseBanksList = await fetch('http://localhost:8042/api/v1/institutions?uid=3', {
+                const data = await response.json();
+                return data.score || fallbackScore;
+            } catch (error) {
+                console.error('Error fetching score:', error);
+                return fallbackScore;
+            }
+        },
+        async fetchBanksList() {
+            const fallbackBanks = ["DemoBank", "N92", "Revola", "Banksta"]; // for demo purposes only (no prod)
+            try {
+                const response = await fetch('http://localhost:8042/api/v1/institutions?uid=3', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
                     },
                 });
-                const scoreData = await responseScore.json();
-                const banksDataFull = await responseBanksList.json();
-                // Ensure the data is ready before routing
-                if (banksDataFull.banks && scoreData.score) {
-                    this.$store.dispatch('updateBanksData', banksDataFull.banks);
-                    this.$store.dispatch('updateScore', scoreData.score);
+                const data = await response.json();
+                return data.banks && data.banks.length > 0 ? data.banks : fallbackBanks;
+            } catch (error) {
+                console.error('Error fetching banks list:', error);
+                return fallbackBanks;
+            }
+        },
+        async submitForm() {
+            try {
+                const score = await this.fetchScore();
+                const banks = await this.fetchBanksList();
+                console.log('Banks:', banks);
+                console.log('Score:', score);
+                if (banks && score) {
+                    this.$store.dispatch('updateBanksData', banks);
+                    this.$store.dispatch('updateScore', score);
                     this.$router.push({ name: 'results' });
-                }
-                else {
-                    console.error('Incomplete data:', banksDataFull, scoreData);
+                } else {
+                    console.error('Incomplete data:', banks, score);
                 }
             } catch (error) {
-                console.error('Error fetching data:', error);
+                console.error('Error submitting form:', error);
             }
         }
     }

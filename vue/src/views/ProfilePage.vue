@@ -11,7 +11,7 @@
             </template>
             <div class="overlay-container">
               <v-card class="white-card">
-                <v-card-title class="bold-title">Hello Alexander Semenov</v-card-title>
+                <v-card-title class="bold-title">Hello Mr. Alexander Semenov</v-card-title>
                 <v-card-text class="card-text">
                   We prioritize keeping your personal data private and secure above all else. Using state-of-the-art cryptography, we are able to retrieve your credit score from your encrypted data.
                 </v-card-text>

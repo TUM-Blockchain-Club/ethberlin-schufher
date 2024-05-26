@@ -9,7 +9,7 @@
             <a href="#" class="menu-link" @click.prevent="handleApiTestClick">{{ apiTestLinkText }}</a>
         </div>
         <div class="buttons-right" style="display: flex; align-items: center;">
-            <span style="margin-right: 10px; color: white;">Alexander Semenov</span>
+            <span style="margin-right: 10px; color: white;">Mr. Alexander Semenov</span>
             <v-icon large class="avatar-icon custom-avatar-icon">mdi-account-circle</v-icon>
         </div>
 
