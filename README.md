@@ -1,4 +1,5 @@
-# SCHUFHER
+# ![Personal Potal](./images/logo-text.svg)
+ 
 SCHUFA, but keep your data to yourself
 
 ![Personal Potal](./images/personal-page.png)
