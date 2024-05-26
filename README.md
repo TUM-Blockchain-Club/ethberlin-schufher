@@ -18,7 +18,6 @@ During the entire process, the data submitted by any party can not be viewed by 
 (if poetry complains, run `poetry lock` in the backend folder)
 
 The frontend and bank data API are started this way, the ML model is run in a separate jupyter notebook since it would not run directly on Apple Silicon.
+The endpoints in the Vue.js files have to be adjusted accordingly if self-hosted.
 
 The frontent can be accessed at http://localhost:8888.
-
-
