@@ -9,4 +9,4 @@ SCHUFA, but keep your data to yourself
 
 The frontend and bank data API are started this way, the ML model is run in a separate jupyter notebook since it would not run directly on Apple Silicon.
 
-The frontent can be accessed at `localhost:8888`.
+The frontent can be accessed at http://localhost:8888.
