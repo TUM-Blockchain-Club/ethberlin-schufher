@@ -1,0 +1,98 @@
+2024-05-25 17:47:21,579 | werkzeug | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-25 17:47:21,579 | werkzeug | INFO | [33mPress CTRL+C to quit[0m
+2024-05-25 17:47:21,581 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 17:47:21,656 | werkzeug | WARNING |  * Debugger is active!
+2024-05-25 17:47:21,666 | werkzeug | INFO |  * Debugger PIN: 145-224-074
+2024-05-25 17:49:10,657 | werkzeug | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-25 17:49:10,657 | werkzeug | INFO | [33mPress CTRL+C to quit[0m
+2024-05-25 17:49:10,657 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 17:49:12,418 | werkzeug | WARNING |  * Debugger is active!
+2024-05-25 17:49:12,431 | werkzeug | INFO |  * Debugger PIN: 145-224-074
+2024-05-25 17:50:27,501 | werkzeug | INFO |  * Detected change in '/Users/luhe/Projects/tbc/ethberlin-schufher/backend/src/api/v1/endpoints.py', reloading
+2024-05-25 17:50:27,782 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 17:50:29,532 | werkzeug | WARNING |  * Debugger is active!
+2024-05-25 17:50:29,540 | werkzeug | INFO |  * Debugger PIN: 145-224-074
+2024-05-25 17:50:35,775 | werkzeug | INFO |  * Detected change in '/Users/luhe/Projects/tbc/ethberlin-schufher/backend/src/api/v1/endpoints.py', reloading
+2024-05-25 17:50:36,048 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 17:50:37,765 | werkzeug | WARNING |  * Debugger is active!
+2024-05-25 17:50:37,775 | werkzeug | INFO |  * Debugger PIN: 145-224-074
+2024-05-25 17:51:06,428 | endpoints-logger | DEBUG | root endpoint was called.
+2024-05-25 17:51:06,429 | werkzeug | INFO | 127.0.0.1 - - [25/May/2024 17:51:06] "GET /api/v1/ HTTP/1.1" 200 -
+2024-05-25 17:51:11,023 | endpoints-logger | DEBUG | Get banks endpoint was called.
+2024-05-25 17:51:11,024 | werkzeug | INFO | 127.0.0.1 - - [25/May/2024 17:51:11] "[31m[1mGET /api/v1/banks HTTP/1.1[0m" 415 -
+2024-05-25 17:51:34,610 | werkzeug | INFO | 127.0.0.1 - - [25/May/2024 17:51:34] "[31m[1mGET /api/v1/get_score HTTP/1.1[0m" 415 -
+2024-05-25 17:55:06,283 | werkzeug | INFO |  * Detected change in '/Users/luhe/Projects/tbc/ethberlin-schufher/backend/src/utils/ml.py', reloading
+2024-05-25 17:55:06,560 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 17:56:25,226 | werkzeug | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-25 17:56:25,226 | werkzeug | INFO | [33mPress CTRL+C to quit[0m
+2024-05-25 17:56:25,226 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 17:56:26,963 | werkzeug | WARNING |  * Debugger is active!
+2024-05-25 17:56:26,975 | werkzeug | INFO |  * Debugger PIN: 145-224-074
+2024-05-25 17:57:41,898 | werkzeug | INFO |  * Detected change in '/Users/luhe/Projects/tbc/ethberlin-schufher/backend/src/utils/ml.py', reloading
+2024-05-25 17:57:42,213 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 18:03:30,510 | werkzeug | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-25 18:03:30,510 | werkzeug | INFO | [33mPress CTRL+C to quit[0m
+2024-05-25 18:03:30,510 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 18:03:32,244 | werkzeug | WARNING |  * Debugger is active!
+2024-05-25 18:03:32,254 | werkzeug | INFO |  * Debugger PIN: 145-224-074
+2024-05-25 18:03:58,310 | werkzeug | INFO |  * Detected change in '/Users/luhe/Projects/tbc/ethberlin-schufher/backend/src/utils/ml.py', reloading
+2024-05-25 18:03:58,567 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 18:04:00,326 | werkzeug | WARNING |  * Debugger is active!
+2024-05-25 18:04:00,338 | werkzeug | INFO |  * Debugger PIN: 145-224-074
+2024-05-25 18:04:04,491 | werkzeug | INFO |  * Detected change in '/Users/luhe/Projects/tbc/ethberlin-schufher/backend/src/utils/ml.py', reloading
+2024-05-25 18:04:04,733 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 18:04:06,461 | werkzeug | WARNING |  * Debugger is active!
+2024-05-25 18:04:06,473 | werkzeug | INFO |  * Debugger PIN: 145-224-074
+2024-05-25 18:04:15,813 | werkzeug | INFO |  * Detected change in '/Users/luhe/Projects/tbc/ethberlin-schufher/backend/src/utils/ml.py', reloading
+2024-05-25 18:04:16,075 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 18:13:27,732 | werkzeug | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-25 18:13:27,732 | werkzeug | INFO | [33mPress CTRL+C to quit[0m
+2024-05-25 18:13:27,732 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 18:13:29,434 | werkzeug | WARNING |  * Debugger is active!
+2024-05-25 18:13:29,444 | werkzeug | INFO |  * Debugger PIN: 145-224-074
+2024-05-25 18:13:34,761 | werkzeug | INFO | 127.0.0.1 - - [25/May/2024 18:13:34] "[35m[1mGET /api/v1/get_score HTTP/1.1[0m" 500 -
+2024-05-25 18:14:10,723 | werkzeug | INFO | 127.0.0.1 - - [25/May/2024 18:14:10] "[35m[1mGET /api/v1/get_score HTTP/1.1[0m" 500 -
+2024-05-25 18:14:10,748 | werkzeug | INFO | 127.0.0.1 - - [25/May/2024 18:14:10] "GET /api/v1/get_score?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-05-25 18:14:10,751 | werkzeug | INFO | 127.0.0.1 - - [25/May/2024 18:14:10] "GET /api/v1/get_score?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-05-25 18:14:10,777 | werkzeug | INFO | 127.0.0.1 - - [25/May/2024 18:14:10] "GET /api/v1/get_score?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-05-25 18:14:10,816 | werkzeug | INFO | 127.0.0.1 - - [25/May/2024 18:14:10] "[36mGET /api/v1/get_score?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-05-25 18:19:20,147 | werkzeug | INFO |  * Detected change in '/Users/luhe/Projects/tbc/ethberlin-schufher/backend/src/utils/ml.py', reloading
+2024-05-25 18:19:20,442 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 18:19:22,169 | werkzeug | WARNING |  * Debugger is active!
+2024-05-25 18:19:22,177 | werkzeug | INFO |  * Debugger PIN: 145-224-074
+2024-05-25 18:19:33,576 | werkzeug | INFO | 127.0.0.1 - - [25/May/2024 18:19:33] "GET /api/v1/get_score HTTP/1.1" 200 -
+2024-05-25 18:35:00,452 | werkzeug | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-25 18:35:00,452 | werkzeug | INFO | [33mPress CTRL+C to quit[0m
+2024-05-25 18:35:00,453 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 18:35:02,188 | werkzeug | WARNING |  * Debugger is active!
+2024-05-25 18:35:02,199 | werkzeug | INFO |  * Debugger PIN: 145-224-074
+2024-05-25 18:35:06,179 | werkzeug | INFO | 127.0.0.1 - - [25/May/2024 18:35:06] "[35m[1mGET /api/v1/get_score HTTP/1.1[0m" 500 -
+2024-05-25 18:36:34,587 | werkzeug | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-25 18:36:34,587 | werkzeug | INFO | [33mPress CTRL+C to quit[0m
+2024-05-25 18:36:34,587 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 18:36:36,271 | werkzeug | WARNING |  * Debugger is active!
+2024-05-25 18:36:36,282 | werkzeug | INFO |  * Debugger PIN: 145-224-074
+2024-05-25 18:36:38,574 | werkzeug | INFO | 127.0.0.1 - - [25/May/2024 18:36:38] "[35m[1mGET /api/v1/get_score HTTP/1.1[0m" 500 -
+2024-05-25 18:41:40,572 | werkzeug | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-25 18:41:40,572 | werkzeug | INFO | [33mPress CTRL+C to quit[0m
+2024-05-25 18:41:40,572 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 18:41:42,322 | werkzeug | WARNING |  * Debugger is active!
+2024-05-25 18:41:42,332 | werkzeug | INFO |  * Debugger PIN: 145-224-074
+2024-05-25 18:41:46,591 | werkzeug | INFO | 127.0.0.1 - - [25/May/2024 18:41:46] "[35m[1mGET /api/v1/get_score HTTP/1.1[0m" 500 -
+2024-05-25 18:48:12,157 | werkzeug | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-25 18:48:12,157 | werkzeug | INFO | [33mPress CTRL+C to quit[0m
+2024-05-25 18:48:12,158 | werkzeug | INFO |  * Restarting with stat
+2024-05-25 18:48:13,918 | werkzeug | WARNING |  * Debugger is active!
+2024-05-25 18:48:13,931 | werkzeug | INFO |  * Debugger PIN: 145-224-074
+2024-05-25 18:48:17,963 | werkzeug | INFO | 127.0.0.1 - - [25/May/2024 18:48:17] "[35m[1mGET /api/v1/get_score HTTP/1.1[0m" 500 -
+2024-05-25 18:50:58,577 | werkzeug | INFO |  * Detected change in '/Users/luhe/Projects/tbc/ethberlin-schufher/backend/src/utils/ml.py', reloading
+2024-05-25 18:50:58,870 | werkzeug | INFO |  * Restarting with stat

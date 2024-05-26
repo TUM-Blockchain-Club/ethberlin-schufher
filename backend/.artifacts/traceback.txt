@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/luhe/Library/Caches/pypoetry/virtualenvs/backend-1vwm6c7z-py3.9/lib/python3.9/site-packages/concrete/fhe/compilation/compiler.py", line 456, in compile
+    self._evaluate("Compiling", inputset)
+  File "/Users/luhe/Library/Caches/pypoetry/virtualenvs/backend-1vwm6c7z-py3.9/lib/python3.9/site-packages/concrete/fhe/compilation/compiler.py", line 301, in _evaluate
+    self._trace(first_sample)
+  File "/Users/luhe/Library/Caches/pypoetry/virtualenvs/backend-1vwm6c7z-py3.9/lib/python3.9/site-packages/concrete/fhe/compilation/compiler.py", line 220, in _trace
+    self.graph = Tracer.trace(self.function, parameters)
+  File "/Users/luhe/Library/Caches/pypoetry/virtualenvs/backend-1vwm6c7z-py3.9/lib/python3.9/site-packages/concrete/fhe/tracing/tracer.py", line 78, in trace
+    node = Node.input(param, parameters[param])
+  File "/Users/luhe/Library/Caches/pypoetry/virtualenvs/backend-1vwm6c7z-py3.9/lib/python3.9/site-packages/concrete/fhe/representation/node.py", line 149, in input
+    return Node([value], value, Operation.Input, InputEvaluator(), {"name": name})
+  File "/Users/luhe/Library/Caches/pypoetry/virtualenvs/backend-1vwm6c7z-py3.9/lib/python3.9/site-packages/concrete/fhe/representation/node.py", line 190, in __init__
+    self.tag = ".".join(tag_context.stack)
+AttributeError: '_thread._local' object has no attribute 'stack'
