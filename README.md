@@ -1,5 +1,5 @@
-# ![Personal Potal](./images/logo-text.svg)
- 
+# SCHUFHER
+
 SCHUFA, but keep your data to yourself
 
 ![Personal Potal](./images/personal-page.png)
@@ -28,3 +28,14 @@ The frontend and bank data API are started this way, the ML model is run in a se
 The endpoints in the Vue.js files have to be adjusted accordingly if self-hosted.
 
 The frontent can be accessed at http://localhost:8888.
+
+## Collaborators
+https://github.com/Aysenur-TUM
+
+https://github.com/neodyma
+
+https://github.com/ThomasW97
+
+https://github.com/Tsatsch
+
+![Personal Potal](./images/logo-text-black.png)
