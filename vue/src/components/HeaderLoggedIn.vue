@@ -6,7 +6,6 @@
         <div class="menu-items">
             <a href="#" class="menu-link">PRODUCTS</a>
             <a href="#" class="menu-link">CONTACT</a>
-            <a href="#" class="menu-link" @click.prevent="handleApiTestClick">{{ apiTestLinkText }}</a>
         </div>
         <div class="buttons-right" style="display: flex; align-items: center;">
             <span style="margin-right: 10px; color: white;">Mr. Alexander Semenov</span>
@@ -17,31 +16,6 @@
 </template>
 
 <script>
-export default {
-    data() {
-        return {
-            apiTestLinkText: 'API PING',
-            defaultApiTestLinkText: 'API PING'
-        }
-    },
-    methods: {
-        async testApiCall() {
-            try {
-                const response = await fetch('http://localhost:8042/api/v1/')
-                const data = await response.json()
-                this.apiTestLinkText = data.response
-                setTimeout(() => {
-                    this.apiTestLinkText = this.defaultApiTestLinkText
-                }, 5000)
-            } catch (error) {
-                console.error(error)
-            }
-        },
-        handleApiTestClick() {
-            this.testApiCall()
-        }
-    }
-}
 </script>
 
 <style scoped>
