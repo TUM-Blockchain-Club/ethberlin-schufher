@@ -1,10 +1,7 @@
 <template>
     <div class="app-bar">
-      <router-link to="/" class="logo-link">
-        <img src="@/assets/logo.svg" alt="Logo" class="logo" />
-      </router-link>
       <router-link to="/" class="title">
-        <img src="@/assets/logo-text.svg" alt="Your SVG" />
+        <img src="@/assets/logo-text.svg" alt="schufher logo" />
       </router-link>
       <div class="menu-items">
         <a href="#" class="menu-link">PRODUCTS</a>
@@ -15,7 +12,7 @@
         <router-link to="/login">
           <v-btn class="normal-button" style="border-radius: 50px;">Sign In</v-btn>
         </router-link>
-        <v-btn class="emphasize-button" style="border-radius: 50px;">Sign Up for free</v-btn>
+        <v-btn class="emphasize-button" style="border-radius: 50px;">Sign Up</v-btn>
       </div>
     </div>
 </template>
