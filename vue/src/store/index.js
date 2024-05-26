@@ -1,20 +1,32 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
 
 export default createStore({
   state: {
-    authenticated: false,
-    showPasswordPopOut: false
+    banksData: [],
+    score: null
   },
   mutations: {
-    authenticate(state) {
-      state.authenticated = true;
+    setBanksData(state, banksData) {
+      console.log('Mutating banksData:', banksData); 
+      state.banksData = banksData;
     },
-    showPasswordPopOut(state, payload) {
-        state.showPasswordPopOut = true
-        state.intendedRoute = payload.intendedRoute
-      },
-    hidePasswordPopOut(state) {
-      state.showPasswordPopOut = false;
+    setScore(state, score) {
+      console.log('Mutating score:', score); 
+      state.score = score;
     }
+  },
+  actions: {
+    updateBanksData({ commit }, banksData) {
+      console.log('Dispatching banksData:', banksData); 
+      commit('setBanksData', banksData);
+    },
+    updateScore({ commit }, score) {
+      console.log('Dispatching score:', score); 
+      commit('setScore', score);
+    }
+  },
+  getters: {
+    getBanksData: state => state.banksData,
+    getScore: state => state.score
   }
-})
+});
