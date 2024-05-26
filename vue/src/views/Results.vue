@@ -5,7 +5,6 @@
         <v-col cols="12" md="8">
           <v-card class="result-card" elevation="10">
             <v-card-text>
-              <ScoreBar :score="score" />
               <div class="result-label">These data were collected from your accounts in:</div>
               <v-list dense>
                 <v-list-item v-for="bank in banksData" :key="bank" class="bank-item">
@@ -19,6 +18,7 @@
               </v-list>
               <div class="result-label">Aggregated Bank Credit Score: {{ score }}</div>
             </v-card-text>
+            <ScoreBar :score="score" />
           </v-card>
         </v-col>
       </v-row>

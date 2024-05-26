@@ -7,11 +7,12 @@
       </v-row>
       <div class="arrow" :style="arrowStyle">▼</div>
       <div class="score-label" :style="arrowStyle">{{ score }}</div>
-      <v-row justify="space-between" class="legend">
-        <v-col v-for="segment in segments" :key="segment.value" class="pa-1">
-          <span>{{ segment.value }}</span>
-        </v-col>
-      </v-row>
+      <div class="legend">
+        <span v-for="(segment, index) in legendTicks" :key="index" :style="legendTickStyle(segment.position)">
+          <div class="tick-line"></div>
+          {{ segment.value }}
+        </span>
+      </div>
     </div>
   </template>
   
@@ -26,15 +27,22 @@
     computed: {
       segments() {
         return [
-          { value: 20, color: 'red' },
+          { value: 0, color: 'red' },
+          { value: 20, color: 'light-red' },
           { value: 40, color: 'orange' },
           { value: 60, color: 'yellow' },
-          { value: 80, color: 'lightgreen' },
-          { value: 100, color: 'green' }
+          { value: 80, color: 'green' }
+        ];
+      },
+      legendTicks() {
+        return [
+          { value: 0, position: 0 },
+          { value: 50, position: 50 },
+          { value: 100, position: 100 }
         ];
       },
       arrowStyle() {
-        const position = this.score / 100 * 90;
+        const position = this.score / 100 * 100;
         return {
           left: `calc(${position}% - 10px)`
         };
@@ -47,6 +55,13 @@
           'low': this.score < value,
           'high': this.score >= value,
           [segment.color]: true
+        };
+      },
+      legendTickStyle(position) {
+        return {
+          position: 'absolute',
+          left: `${position}%`,
+          transform: 'translateX(-50%)'
         };
       }
     }
@@ -62,7 +77,7 @@
   
   .score-segment {
     width: 100%;
-    height: 30px;
+    height: 60px;
     border-radius: 5px;
   }
   
@@ -78,6 +93,10 @@
     background-color: red;
   }
   
+  .light-red {
+    background-color: #ff6666;
+  }
+  
   .orange {
     background-color: orange;
   }
@@ -86,24 +105,20 @@
     background-color: yellow;
   }
   
-  .lightgreen {
-    background-color: lightgreen;
-  }
-  
   .green {
     background-color: green;
   }
   
   .arrow {
     position: absolute;
-    top: 35px;
+    top: -30px;
     font-size: 24px;
     color: red;
   }
   
   .score-label {
     position: absolute;
-    top: 60px;
+    top: -55px;
     font-size: 18px;
     color: black;
     text-align: center;
@@ -111,9 +126,23 @@
   }
   
   .legend {
+    position: relative;
     font-size: 14px;
     color: black;
     margin-top: 10px;
+    height: 20px;
+  }
+  
+  .legend span {
+    position: absolute;
+    bottom: -20px;
+    text-align: center;
+  }
+  
+  .tick-line {
+    height: 10px;
+    border-left: 2px solid black;
+    margin-bottom: 2px;
   }
   </style>
   
