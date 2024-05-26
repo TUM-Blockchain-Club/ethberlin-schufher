@@ -41,6 +41,10 @@
                                             variant="solo"></v-text-field>
                                     </v-col>
                                     <v-col cols="12" md="6">
+                                        <div class="field-label">City</div>
+                                        <v-text-field v-model="form.city" variant="solo"></v-text-field>
+                                    </v-col>
+                                    <v-col cols="12" md="6">
                                         <div class="field-label">Country</div>
                                         <v-text-field v-model="form.country" variant="solo"></v-text-field>
                                     </v-col>
@@ -139,6 +143,7 @@ export default {
                 street: '',
                 houseNumber: '',
                 postcode: '',
+                city: '',
                 country: '',
                 birthday: '',
                 checkbox1: false,
