@@ -39,3 +39,6 @@ def validate_password():
     #     log.debug("Authentification failed.")
     #     return jsonify({'authenticated': False}), 401
 
+@v1_blueprint.route('/getCreditScore', methods=['GET'])
+def get_credit_score():
+    return jsonify({"score": 100})

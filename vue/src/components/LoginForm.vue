@@ -11,7 +11,9 @@
           <v-text-field v-model="email" variant="solo"></v-text-field>
           <div class="field-label">PASSWORD</div>
           <v-text-field v-model="password" type="password" variant="solo"></v-text-field>
-          <v-btn type="submit" color="#76ABAE" block large class="rounded-btn black-text-btn">Login</v-btn>
+          <router-link to="/user">
+            <v-btn type="submit" color="#76ABAE" block large class="rounded-btn black-text-btn">Login</v-btn>
+          </router-link>
         </v-form>
       </v-card-text>
       <div class="horizontal-line"></div>
@@ -79,6 +81,7 @@ export default {
 
 .avatar-icon {
   color: #76ABAE;
+  font-size: 44px;
 }
 
 .custom-avatar-icon path:first-child {

@@ -4,7 +4,7 @@
     <div class="content">
       <div class="split-container">
         <div class="left-side">
-          <img src="@/assets/images/hands.jpg" alt="Office Image" class="left-image" />
+          <v-img :src="handsImageSrc" alt="Office Image" class="left-image" cover></v-img>
         </div>
         <div class="right-side">
           <LoginForm />
@@ -19,6 +19,9 @@
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 import LoginForm from '@/components/LoginForm.vue'
+
+const handsImageSrc = new URL('@/assets/images/hands.jpg', import.meta.url).href;
+
 </script>
 
 <style scoped>
