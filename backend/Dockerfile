@@ -1,4 +1,4 @@
-FROM python:3.10-bullseye
+FROM python:3.9-bullseye
 
 # possible to change python version, see: https://hub.docker.com/_/python/tags
 
