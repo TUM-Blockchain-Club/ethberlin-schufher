@@ -1,15 +1,21 @@
 # SCHUFHER
 SCHUFA, but keep your data to yourself
 
+![Personal Potal](./images/personal-page.png)
+
 ## Overview
 
 SchuFHEr aims to compute a Schufa-like credit score without having to rely on an intransparent scoring system that gives a private company access to some of the most sensitive personal data. 
 
 To achieve this, the credit agency now only acts as a possible source for gathering a person's different bank account or credit providers.
 The providers and the agency add their relevant data to an encrypted pool of (e.g., transaction) information.
-A ML model runs directly on the encrypted data and calculates a credit rating and returns it in an encrypted fashion.
+A ML model runs directly on the encrypted data and calculates a credit rating using fully homomorphic encryption (FHE) and returns it in an encrypted fashion.
 The participating parties can then decrypt the rating, without being able to decrypt the information provided by other institutions.
 During the entire process, the data submitted by any party can not be viewed by any other party, while still being able to compute a rating from the combined data submissions.
+
+![Credit Score Results](./images/credit-score-results.png)
+
+
 
 ## Setup
 
