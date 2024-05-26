@@ -152,7 +152,7 @@
       },
       async submitForm() {
         try {
-          const response = await fetch('http://localhost:8042/api/v1/getCreditScore', {
+          const response = await fetch('http://localhost:8042/api/v1/get_score/3', {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',

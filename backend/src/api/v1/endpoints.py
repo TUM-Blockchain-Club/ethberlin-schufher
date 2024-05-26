@@ -1,7 +1,7 @@
 from flask import Blueprint, Response
 import logging
 from flask import Flask, jsonify, request
-from utils import institutions
+from src.utils import institutions
 
 # from utils import ml
 
@@ -32,6 +32,6 @@ def submit_rating():
 #
 # this functionality doesn't work on apple silicon :(
 #
-# @v1_blueprint.route("/getCreditScore", methods=[ "GET"])
+# @v1_blueprint.route("/get_score", methods=[ "GET"])
 # def get_score():
 #     return jsonify({"score": ml.predict_score(0)}), 200
